@@ -1,0 +1,43 @@
+{% extends 'generic.html' %}
+
+{% block headContent %}
+    <title>ARIS - Assemblées Générales</title>
+    <style type="text/css">
+        #nav1 a {
+        border-bottom: none;
+        }
+        #nav1 a:nth-child(2) {
+        /* border-bottom: none; */
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+        #nav2 a:nth-child(4) {
+        border-bottom: none;
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+    </style>
+{% endblock %}
+
+{% block nav2Content %}
+    <a href="/infosUtiles">Informations Utiles</a>
+    <a href="/statutsAris">Statuts de l'ARIS</a>
+    <a href="/conseilAdmin">Conseil d'Administration</a>
+    <a href="/assembleesGales">Assemblées Générales</a>
+    <a href="/mentionsLegales">Mentions Légales</a>
+{% endblock %}
+
+{% block sxnContent %}
+        <a href="/listAGO">Assemblées Générales Ordinaires</a><br/>
+        <ul>
+            {% for fch in fchS %}
+            <li>
+                <a href="../static/ago/{{ fch }}" target="_blank">{{ fch }}</a>
+            </li>
+                <br/>
+            {% endfor %}
+        </ul>
+        <br/><br/>
+{% endblock %}

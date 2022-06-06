@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../static/css/styleAris.css"/>
+</head>
+<head>
+    {% block headContent %}{% endblock %}
+</head>
+<body>
+    <header>
+        <span id="spnContraction" onClick="rotateSpan();"><h1>ARIS</h1></span>
+        <span id="spnDenomination">- Association des Retraités de la Banque Indosuez devenue CA-CIB -</span>
+    </header>
+    <main>
+        <section id="sxnNavig">
+            <nav id="nav1">
+                <a href="/index">Accueil</a>
+                <a href="/legalAdmin">Légal & Administratif</a>
+                <a href="/retraites">Retraites & Actualités</a>
+                <a href="/activites">Activités</a>
+                <a href="/adherents">Adhérents</a>
+                <a href="/histoire">Histoire</a>
+            </nav>
+            <nav id="nav2">
+                {% block nav2Content %}{% endblock %}
+            </nav>
+        </section>
+        <section id="sxnContent">
+            {% block sxnContent %}{% endblock %}
+        </section>
+    </main>
+    <footer>
+        <div class="divCopyright">Copyright ARIS © 2022 - Tous Droits Réservés - Mentions Légales</div>
+    </footer>
+    <!---->
+    <script src="../static/jvs/script.js"></script>
+</body>
+</html>

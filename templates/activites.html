@@ -1,0 +1,89 @@
+{% extends 'generic.html' %}
+
+{% block headContent %}
+    <title>ARIS - Activités</title>
+    <style type="text/css">
+        #nav1 a {
+        border-bottom: none;
+        }
+        #nav1 a:nth-child(4) {
+        /* border-bottom: none; */
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+    </style>
+{% endblock %}
+
+{% block nav2Content %}
+    <a href="/programsActivites">Programmes</a>
+    <a href="/comptesRendus">Comptes Rendus</a>
+{% endblock %}
+
+{% block sxnContent %}
+        Activités
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./css/styleAris.css" />
+    <link rel="stylesheet" type="text/css" href="./css/activites.css" />
+    <title>Activites</title>
+</head>
+<body>
+    <header>
+        <div class="clsImage"><img id="imgBanqueIndosuez" src="./img/BanqueIndosuez.png" alt="Banque Indosuez"/></div>
+        <div class="clsLogo">ARIS - Association des Retraités de la Banque Indosuez<br/>devenue CA-CIB</div>
+    </header>
+    <main>
+        <section id="sxnNavig">
+            <nav id="nav1">
+                <a href="./index.html">Accueil</a>
+                <a href="./legalesAdmin.html">Légales & Administratives</a>
+                <a href="./retraites.html">Retraites</a>
+                <a href="./activites.html">Activités</a>
+                <a href="./adherents.html">Adhérents</a>
+                <a href="./histoire.html">Histoire</a>
+            </nav>
+            <nav id="nav2">
+                <a href="#">Programmes</a>
+                <a href="#">Comptes Rendus</a>
+            </nav>
+        </section>
+        <section id="sxnContent">
+            Activités
+        </section>
+    </main>
+    <footer>
+        <div class="divCopyright">Copyright ARIS © 2022 - Tous Droits Réservés - Mentions Légales</div>
+    </footer>
+    
+</body>
+</html>

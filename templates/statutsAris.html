@@ -1,0 +1,62 @@
+{% extends 'generic.html' %}
+
+{% block headContent %}
+    <title>ARIS - Status</title>
+    <style type="text/css">
+        #nav1 a {
+           border-bottom: none;
+        }
+         #nav1 a:nth-child(2) {
+        /* border-bottom: none; */
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+        #nav2 a:nth-child(2) {
+        border-bottom: none;
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+    </style>
+{% endblock %}
+
+{% block nav2Content %}
+    <a href="/infosUtiles">Informations Utiles</a>
+    <a href="/statutsAris">Statuts de l'ARIS</a>
+    <a href="/conseilAdmin">Conseil d'Administration</a>
+    <a href="/assembleesGales">Assemblées Générales</a>
+    <a href="/mentionsLegales">Mentions Légales</a>
+{% endblock %}
+
+{% block sxnContent %}
+    L'Association des Retraités de la Banque Indosuez "A.R.I.S." a été constituée en Mai 1982, sous le régime de la loi de 1901, afin de permettre aux retraités de la Banque Indosuez qui le souhaitaient de pouvoir se regrouper.
+    <br/><br/>
+    Les statuts de l'association ont fait l'objet de plusieurs modifications :
+    <br/><br/>
+    En 2004 :
+    <ul>
+        <li><span class="li">Transfert du siège social dans les locaux de la Banque, 9 Quai du Président Paul Doumer, 92920 Paris La Défense Cedex</span></li>
+        <li><span class="li">Création d’une section « ALUMNI » afin d’accueillir des anciens de la Banque Indosuez ayant quitté la banque, mais encore en activité. Nouvelle Raison Sociale : « Association des Anciens et des Retraités de la Banque Indosuez. ARIS ».</span></li>
+    </ul>
+    <br/>
+    En 2009 :
+    <ul>
+        <li><span class="li">Afin de pouvoir accueillir tous les retraités de la banque au fil des opérations de fusions /réorganisations, la raison sociale est modifiée en « Association des Anciens et des Retraités de la Banque Indosuez devenue Calyon. ARIS ».</span></li>
+    </ul>
+    <br/>
+    En 2015 :
+    <ul>
+        <li><span class="li">Modification de la raison sociale pour s’adapter au changement de raison sociale de la Banque : «Association des Anciens et des Retraités de la Banque Indosuez devenue CA-CIB. ARIS ».</span></li>
+        <li><span class="li">La limite d’âge des mandats d’administrateur est portée de 75 à 78 ans.</span></li>
+    </ul>
+    <br/>
+    En 2018 :
+    <ul>
+        <li><span class="li">La section ALUMNI ayant quitté l’ARIS, la raison sociale est de nouveau modifiée en « Association des Retraités de la Banque Indosuez devenue CA-CIB ».</span></li>
+        <li><span class="li">Transfert du siège social dans les nouveaux locaux de la Banque, 12 place des Etats Unis, CS 70052, 92547 Montrouge Cedex.</span></li>
+    </ul>
+    <br/>
+    Document: <a href="../static/doc/statutsAris.pdf" target="_blank">Statuts de l'ARIS</a>
+    <br/><br/>
+{% endblock %}

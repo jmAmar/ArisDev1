@@ -1,0 +1,25 @@
+{% extends 'generic.html' %}
+
+{% block headContent %}
+    <title>ARIS - Retraites</title>
+    <style type="text/css">
+        #nav1 a {
+        border-bottom: none;
+        }
+        #nav1 a:nth-child(3) {
+        /* border-bottom: none; */
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+    </style>
+{% endblock %}
+
+{% block nav2Content %}
+    <a href="/articlesRetraites">Articles & Communiqués</a>
+    <a href="/liensUtiles">Liens Utiles</a>
+{% endblock %}
+
+{% block sxnContent %}
+        Retraites
+{% endblock %}

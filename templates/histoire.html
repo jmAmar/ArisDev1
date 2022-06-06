@@ -1,0 +1,199 @@
+{% extends 'generic.html' %}
+
+{% block headContent %}
+    <head>
+        <title>ARIS - Histoire</title>
+        <style type="text/css">
+            #nav1 a {
+            border-bottom: 1px solid var(--indosuez-color);
+            }
+            #nav1 a:nth-child(6) {
+            border-bottom: none;
+            color: var(--indosuez-color);
+            font-weight: bold;
+            background-color: var(--wheat-color);
+            }
+        </style>
+    </head>
+{% endblock %}
+
+{% block nav2Content %}{% endblock %}
+
+{% block sxnContent %}
+    <ul>
+        <li>Bref Historique
+            <br/><br>
+            <div class="grey">
+            Les origines de la Banque Indosuez prennent leur source dans la création de la <span class="bold">Compagnie Universelle du Canal Maritime de Suez</span> en 1858 par Ferdinand de Lesseps. Celle-ci avait pour objet de construire et d’exploiter le Canal de Suez, inauguré en 1869 par l’Empereur Napoléon III en présence des souverains égyptien et européens. Le Canal est ensuite nationalisé en 1956 par le Colonel Nasser.
+            <br/><br>
+            La Compagnie Universelle du Canal maritime se transforme et se reconvertit en <span class="bold">Compagnie Financière de Suez</span> en 1958. Celle-ci crée alors la Banque de Suez comme banque de financement et de trésorerie du nouveau groupe et la fusionne avec la Banque de L’Union des Mines-La Hénin pour former la <span class="bold">Banque de Suez et de L’Union des Mines</span> en 1959.
+            <br/><br>
+            La <span class="bold">Banque Indosuez</span>, en tant que telle, résulte de la fusion en 1975 de la précédente avec la <span class="bold">Banque de l’Indochine</span>, fondée en 1875 pour servir d’institut d’émission à la Cochinchine récemment conquise. Cette banque se développe en même temps que la colonisation française en Asie jusqu’à la fin du 19ème siècle. C’est la première banque française implanté en Asie du Sud Est (colonie française).
+            <br/><br>
+            Afin d'affirmer l'image identitaire d'Indosuez, la Banque se dote très vite d'un drapeau à ses couleurs. Celui-ci flottera sur tous les bâtiments officiels de la Banque répartis dans plus de 65 pays à travers le monde.<br/>
+                <!--
+                <div class="divImages">
+                    {% for img in imgEmblemes %}
+                        <img class="imgSmall" src="../static/img/emblemesIndosuez/{{ img }}"/>
+                    {% endfor %}
+                -->
+                <section class="sxnCarousel" style="width:705px">
+                    <div class="divCarousel">
+                        {% for img in imgEmblemes %}
+                            <a href="../static/img/emblemesIndosuez/{{ img }}" target="_blank">
+                                <img class="imgCarousel-medium" src="../static/img/emblemesIndosuez/{{ img }}"/>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </section><br/>
+            </div>
+            <div class="grey">
+            le 24 juillet 1993, une cordée composée du guide Richard Mailhos, de Thomas Chevrie et d'Eymeric de Kerhor (de la succursale de Lille) a réussi  l'ascension du Mont Blanc. Il aura fallu environ 8h30 de marche aux courageux amateurs de montagne lillois pour déployer les couleurs de la Banque sur le toit de l'Europe.<br/>
+            <a href="../static/img/montBlanc/ascenssionMontBlanc1993.jpg" target="_blank"><img class="imgCarousel-medium" src="../static/img/montBlanc/ascenssionMontBlanc1993.jpg"  alt="Ascession du Mont-Blanc - 1993"/></a>
+            <br/><br>
+            En 1997, un an après le rapprochement avec le Crédit Agricole qui lui apporte ses activités marchés, internationales et grandes clientèles, le nouvel ensemble devient Crédit Agricole Indosuez.
+            <br/><br>
+            En 2003, le Crédit Agricole réussit son Offre Publique Amicale Mixte sur le Crédit Lyonnais qui lui apporte sa banque de financement et d’investissement .
+            <br/><br>
+            En 2004 le pôle banque de Financement et d’Investissement du groupe Crédit Agricole devient CALYON, renommé CA-CIB en Février 2010.
+            </div>
+        <br/><br>
+        </li>
+        <li><a href="../static/img/Banque_de_l'Indochine-Hanoï1922.pdf">La Banque de l'Indochine - Hanoï 1922</a></li>
+        <br/>
+        <li><a href="../static/img/Banque_de_l'Indochine-Papeete_d'Antan.pdf">La Banque de l'Indochine - Papeete d'Antan</a></li>
+        <br/>
+        <li>
+            <div class="grey">
+                La Banque de l'Indochine - Phnom Penh<br/>
+                <!--
+                <div class="divImages">
+                    {% for img in imgPnomPhen %}
+                        <img class="imgSmall" src="../static/img/indosuezPnomPhen/{{ img }}"/>
+                    {% endfor %}
+                </div>
+                -->
+                <section class="sxnCarousel" style="width:800px">
+                    <div class="divCarousel">
+                        {% for img in imgPnomPhen %}
+                            <img class="imgCarousel-medium" src="../static/img/indosuezPnomPhen/{{ img }}"/>
+                        {% endfor %}
+                    </div>
+                </section><br/>
+            </div>
+        </li>
+        <br/>
+        <li>
+            <div class="grey">
+                <a href="/carouselParis">La Banque de l'Indochine - Paris</a>
+                <br/>
+                <!--
+                <div class="divImages">
+                    {% for img in imgParis %}
+                        <img class="imgSmall" src="../static/img/indosuezParis/{{ img }}"/>
+                    {% endfor %}
+                </div>
+                <br/>
+                -->
+                <section class="sxnCarousel">
+                    <div class="divCarousel">
+                        {% for img in imgParis %}
+                            <a href="../static/img/indosuezParis/{{ img }}" target="_blank">
+                                <img class="imgCarousel-medium" src="../static/img/indosuezParis/{{ img }}"/>
+                            </a>
+                        {% endfor %}
+                    </div>
+                </section><br/>
+            </div>
+        </li>
+        <br/><br>
+        <li>Bibliographie
+            <br/><br>
+            <div class="grey">
+            - <span class="bold">« Des pionniers en Extrême-Orient »</span> de Marc Meuleau (Fayard 1990). C’est une histoire de la Banque de l’Indochine (1875-1975), préfacée par Maurice Lévy-Leboyer,  professeur émérite à l’Université de Paris X  et par Antoine Jeancourt-Galignani, président de la Banque Indosuez.<br/>
+            <a href="../static/img/1990-Des_Pionniers_en_Extreme_Orient.jpg" target="_blank"><img class="imgCarousel-medium" src="../static/img/1990-Des_Pionniers_en_Extreme_Orient.jpg"/></a>
+            <br/><br>
+            - <span class="bold">« Journal de voyage en Egypte – Inauguration du Canal de Suez »</span> de Roberto Morra di Lavriano (Gründ 1997). C’est une transcription du manuscrit original et des notes de Roberto Morra di Lavriano par Alberto Siliotti et Alain Vidal-Naquet, dans un superbe album de grande taille comportant reproductions de tableaux et photos de grande qualité.<br/>
+            <a href="../static/img/1997-Inauguration_du_Canal_de_Suez.jpg" target="_blank"><img class="imgCarousel-medium" src="../static/img/1997-Inauguration_du_Canal_de_Suez.jpg"/></a>
+            <br/><br> 
+            - <span class="bold">« La Société Générale de Belgique 1822-1997 »</span> de René Brion et Jean-Louis Moreau (Fonds Mercator à Anvers 1998). Fondée par le Roi Guillaume 1er des Pays-Bas, la Société Générale est plus ancienne que la Belgique elle-même. L’ouvrage dresse un parallèle constant entre l’histoire de l’entreprise et celle de l’espace économique, social et politique belge pendant 175 ans jusqu’à son rapprochement avec la Compagnie de Suez. En filigrane se dessinent des débats de société toujours actuels.<br/>
+            <a href="../static/img/1998-La_Societe_Generale_de_Belgique.jpg" target="_blank"><img class="imgCarousel-medium" src="../static/img/1998-La_Societe_Generale_de_Belgique.jpg"/></a>
+            </div>
+        </li>
+        <br/><br>
+        <li>Les Centres de Formation
+            <br/><br>
+            <div class="grey">
+            La stratégie mondiale développée par la Banque Indosuez, sous l’impulsion de son président Antoine Jeancourt-Galignani, la conduit à envisager l’acquisition de son propre centre de formation afin d’accueillir stages de formation, séminaires de management, rencontres de dirigeants et de favoriser une meilleure connaissance mutuelle ainsi qu’une fertilisation croisée des expertises et des expériences à travers le monde. Ce sera un véritable investissement au service des hommes, des projets et des entités du groupe Indosuez.
+            <br/><br/>
+            <ol>
+                <li>Le <span class="bold">Manoir de Gorse Hill</span>, demeure édouardienne de 1910 est situé en Angleterre aux environs de Woking dans le Surrey, à 1/2h au sud de Londres. Il a été acquis en 1985 et revendu en 1996 à la veille du rapprochement avec le Crédit Agricole. Il laisse un souvenir mémorable chez tous les anciens d'Indosuez pour son charme, son ambiance extraordinaire et la qualité des intervenants ou formateurs. Son rayonnement international était indéniable.<br/>
+                    <!--
+                    <div class="divImages">
+                        {% for img in imgGorseHill %}
+                            <a href="../static/img/manoirGorseHill/{{ img }}" target="_blank">
+                                <img class="imgSmall" src="../static/img/manoirGorseHill/{{ img }}"/>
+                            </a>
+                        {% endfor %}
+                    </div>
+                    -->
+                    <section class="sxnCarousel">
+                        <div class="divCarousel">
+                            {% for img in imgGorseHill %}
+                                <img class="imgCarousel-medium" src="../static/img/manoirGorseHill/{{ img }}"/>
+                            {% endfor %}
+                        </div>
+                    </section><br/>
+                </li>
+                <li>Le <span class="bold">Château de Fillerval</span>, situé au sud de Beauvais dans l’Oise, était l’ancienne demeure de la famille Cassini, célèbres astronomes qui dirigèrent l’Observatoire de Paris aux 17ème et 18ème siècles. Dès 1996, Crédit Agricole Indosuez a partagé ce centre avec la Compagnie de Suez et la Société Générale de Belgique. C'est actuellement l'université d'entreprise de GDF Suez.<br/>
+                    <!--
+                    <div class="divImages">
+                        {% for img in imgFillerval %}
+                            <img class="imgSmall" src="../static/img/chateauFillerval/{{ img }}"/>
+                        {% endfor %}
+                    </div><br/>
+                    -->
+                    <section class="sxnCarousel" style="width:420px">
+                        <div class="divCarousel">
+                            {% for img in imgFillerval %}
+                                <img class="imgCarousel-medium" src="../static/img/chateauFillerval/{{ img }}"/>
+                            {% endfor %}
+                        </div>
+                    </section><br/>
+                </li>
+                <li>La Banque quittera ce centre à la fin de l’année 2000 pour bénéficier dès 2001 d’un nouveau centre de formation, le <span      class="bold">Domaine du Tremblay</span>, acquis en 2000 par Crédit Agricole SA.<br/>
+                    <!--
+                    <div class="divImages">
+                        {% for img in imgTremblay %}
+                            <img class="imgSmall" src="../static/img/domaineTremblay/{{ img }}"/>
+                        {% endfor %}
+                    </div>
+                    <br/>
+                    -->
+                    <section class="sxnCarousel" style="width:1100px">
+                        <div class="divCarousel">
+                            {% for img in imgTremblay %}
+                                <img class="imgCarousel-medium" src="../static/img/domaineTremblay/{{ img }}"/>
+                            {% endfor %}
+                        </div>
+                    </section><br/>
+                </li>
+            </ol>
+            </div>
+        </li>
+        <br/><br>
+        <li>La Communication
+            <br/><br>
+            <section class="sxnCarousel">
+                <div class="divCarousel">
+                    {% for img in imgCommunication %}
+                    <a href="../static/img/comIndosuez/{{ img }}" target="_blank">
+                        <img class="imgCarousel-medium" src="../static/img/comIndosuez/{{ img }}"/>
+                    </a>
+                    {% endfor %}
+                </div>
+            </section><br/>
+        </li>
+    </ul>
+    <br/><br/>
+{% endblock %}

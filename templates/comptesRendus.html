@@ -1,0 +1,233 @@
+{% extends 'generic.html' %}
+
+{% block headContent %}
+    <title>ARIS - Comptes Rendus d'Activités</title>
+    <style type="text/css">
+        #nav1 a {
+        border-bottom: none;
+        }
+        #nav1 a:nth-child(4) {
+         /* border-bottom: none; */
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+        #nav2 a:nth-child(2) {
+        border-bottom: none;
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+    </style>
+{% endblock %}
+
+{% block nav2Content %}
+    <a href="/programsActivites">Programmes</a>
+    <a href="/comptesRendus">Comptes Rendus</a>
+{% endblock %}
+
+{% block sxnContent %}
+<div class="divFilInfos">
+    <div class="italic10R">15/10/2021</div>
+    <h4>Déjeuner du 15 octobre 2021</h4>
+    Cher(e)s  ,  Ami(e)s<br/><br/>
+    Le 15 octobre 2021, après une longue période de repli forcé, en raison du Covid, 140 convives ont pu enfin se retrouver au CFA Médéric pour partager un excellent repas dans la joie et la bonne humeur<br/><br/>
+    Certains participants ne se retrouveront peut être pas sur les photos, mais il y avait beaucoup de mouvements !...
+    <section class="sxnCarousel">
+        <div class="divCarousel">
+            {% for img in img20211015 %}
+                <a href="../static/img/dejeuner20211015/{{ img }}" target="_blank"><img class="imgCarousel-medium" src="../static/img/dejeuner20211015/{{ img }}"/></a>
+            {% endfor %}
+        </div>
+    </section><br/>
+    Bien amicalement.
+    <br><br/>
+    Jean-Pierre Pampilli
+    <br><br/>
+</div>
+<!---->
+<div class="divFilInfos">
+    <div class="italic10R">2021</div>
+    <h4>Corse 2021 - Excursion aux Calanques de PIANA</h4>
+    <a href="../static/img/Corse2021-ExcursionCalanquesPiana.jpg" target="_blank"><img class="imgCarousel-medium" src="../static/img/Corse2021-ExcursionCalanquesPiana.jpg"/></a>
+    <br><br/>
+</div>
+<!---->
+<div class="divFilInfos">
+    <div class="italic10R">2019</div>
+    <h4>L'ARIS découvre les Pays Baltes 2019</h4>
+    <a href="../static/img/PaysBaltes-VoyageDecouverte.jpg" target="_blank"><img class="imgCarousel-medium" src="../static/img/PaysBaltes-VoyageDecouverte.jpg"/></a>
+    <br><br/>
+</div>
+<!---->
+<div class="divFilInfos">
+    <div class="italic10R">2018</div>
+    <h4>Circuit au Pays de Galles 2018</h4>
+    l'ARIS à toute vapeur .... de CARDIFF à ..... LLANFAIRPWLLGWYNGYLLGOGERYCHWYRNDROBWLLLLANTYSILIOGOGOGOCH ......
+    <section class="sxnCarousel" style="width:800px">
+        <div class="divCarousel">
+            {% for img in imgPaysGalles %}
+            <a href="../static/img/paysGalles/{{ img }}" target="_blank"><img class="imgCarousel-medium" src="../static/img/paysGalles/{{ img }}"/></a>
+            {% endfor %}
+        </div>
+    </section><br/>
+</div>
+<!---->
+<div class="divFilInfos">
+    <div class="italic10R">2019</div>
+    <h4>Epiphanie 2019</h4>
+    <section class="sxnCarousel">
+        <div class="divCarousel">
+            {% for img in imgEpiphanie2019 %}
+            <a href="../static/img/epiphanie2019/{{ img }}" target="_blank"><img class="imgCarousel-medium" src="../static/img/epiphanie2019/{{ img }}"/></a>
+            {% endfor %}
+        </div>
+    </section><br/>
+</div>
+<!---->
+<div class="divFilInfos">
+    <div class="italic10R">10/05/2018</div>
+    <h4>Déjeuner du 05 octobre 2018</h4>
+    <section class="sxnCarousel">
+        <div class="divCarousel">
+            {% for img in img20181005 %}
+            <a href="../static/img/dejeuner20181005/{{ img }}" target="_blank"><img class="imgCarousel-medium" src="../static/img/dejeuner20181005/{{ img }}"/></a>
+            {% endfor %}
+        </div>
+    </section><br/>
+</div>
+<!---->
+<div class="divFilInfos">
+    <div class="italic10R">2018</div>
+    <h4>RAJASTHAN 2018</h4>
+    <section class="sxnCarousel" style="width:800px">
+        <div class="divCarousel">
+            {% for img in imgRajasthan %}
+            <a href="../static/img/rajasthan/{{ img }}" target="_blank"><img class="imgCarousel-medium" src="../static/img/rajasthan/{{ img }}"/></a>
+            {% endfor %}
+        </div>
+    </section><br/>
+</div>
+<!---->
+<div class="divFilInfos">
+    <div class="italic10R">2018</div>
+    <h4>Epiphanie 2018</h4>
+    <section class="sxnCarousel">
+        <div class="divCarousel">
+            {% for img in imgEpiphanie2018 %}
+            <a href="../static/img/epiphanie2018/{{ img }}" target="_blank"><img class="imgCarousel-medium" src="../static/img/epiphanie2018/{{ img }}"/></a>
+            {% endfor %}
+        </div>
+    </section><br/>
+</div>
+<!---->
+<div class="divFilInfos">
+    <div class="italic10R">2017</div>
+    <h4>Week-end à SAINT-PETERSBOURG 2017</h4>
+    <a href="../static/img/SaintPetersbourg-WeekEnd.jpg" target="_blank"><img class="imgCarousel-medium" src="../static/img/SaintPetersbourg-WeekEnd.jpg"/></a>
+    <br><br/>
+</div>
+<!---->
+<div class="divFilInfos">
+    <div class="italic10R">2017</div>
+    <h4>MALTE 2017</h4>
+    <a href="../static/img/Malte-Groupe.jpg" target="_blank"><img class="imgCarousel-medium" src="../static/img/Malte-Groupe.jpg"/></a>
+    <br><br/>
+</div>
+<!---->
+<div class="divFilInfos">
+    <div class="italic10R">2017</div>
+    <h4>NAMIBIE 2017</h4>
+    <section class="sxnCarousel">
+        <div class="divCarousel">
+            {% for img in imgNamibie %}
+            <a href="../static/img/namibie/{{ img }}" target="_blank"><img class="imgCarousel-medium" src="../static/img/namibie/{{ img }}"/></a>
+            {% endfor %}
+        </div>
+    </section><br/>
+</div>
+<!---->
+<div class="divFilInfos">
+    <div class="italic10R">2017</div>
+    <h4>Portugal 2017</h4>
+    <section class="sxnCarousel">
+        <div class="divCarousel">
+            {% for img in imgPortugal2017 %}
+            <a href="../static/img/portugal2017/{{ img }}" target="_blank"><img class="imgCarousel-medium" src="../static/img/portugal2017/{{ img }}"/></a>
+            {% endfor %}
+        </div>
+    </section><br/>
+</div>
+<!---->
+<div class="divFilInfos">
+    <div class="italic10R">2017</div>
+    <h4>Epiphanie 2017</h4>
+    <section class="sxnCarousel">
+        <div class="divCarousel">
+            {% for img in imgEpiphanie2017 %}
+            <a href="../static/img/epiphanie2017/{{ img }}" target="_blank"><img class="imgCarousel-medium" src="../static/img/epiphanie2017/{{ img }}"/></a>
+            {% endfor %}
+        </div>
+    </section><br/>
+</div>
+<!---->
+<div class="divFilInfos">
+    <div class="italic10R">2016</div>
+    <h4>Circuit à MADERE 2016</h4>
+    Quelques belles plantes de l'ARIS à Madère : l'Ile aux Fleurs<br/>
+    <a href="../static/img/Madere-Groupe.jpg" target="_blank"><img class="imgCarousel-medium" src="../static/img/Madere-Groupe.jpg"/></a>
+    <br><br/>
+</div>
+<!---->
+<div class="divFilInfos">
+    <div class="italic10R">2016</div>
+        <h4>Epiphanie 2016</h4>
+        <section class="sxnCarousel">
+            <div class="divCarousel">
+                {% for img in imgEpiphanie2016 %}
+                    <a href="../static/img/epiphanie2016/{{ img }}" target="_blank"><img class="imgCarousel-medium" src="../static/img/epiphanie2016/{{ img }}"/></a>
+                {% endfor %}
+            </div>
+        </section><br/>
+    </div>
+</div>
+<!---->
+<div class="divFilInfos">
+    <div class="italic10R">09/10/2015</div>
+        <h4>Déjeuner du 09 octobre 2015</h4>
+        Pour les 140 ans de la Banque de l’INDOCHINE et les 40 ans de la Banque INDOSUEZ, 200 retraités se sont retrouvés au CFA Médéric pour célébré ces anniversaires. Avec la participation de Philippe GESLIN et Jean-François LEPETIT.
+        <br><br/>
+        <section class="sxnCarousel">
+            <div class="divCarousel">
+                {% for img in img20151009 %}
+                    <a href="../static/img/dejeuner20151009/{{ img }}" target="_blank"><img class="imgCarousel-medium" src="../static/img/dejeuner20151009/{{ img }}"/></a>
+                {% endfor %}
+            </div>
+        </section><br/>
+    </div>
+</div>
+<!---->
+<div class="divFilInfos">
+    <div class="italic10R">2015</div>
+    <h4>Escapade à VIENNE 2015</h4>
+    Le groupe ARIS devant l'Hôtel de Ville<br/>
+    <a href="../static/img/Vienne-Escapade.jpg" target="_blank"><img class="imgCarousel-medium" src="../static/img/Vienne-Escapade.jpg"/></a>
+    <br><br/>
+</div>
+<!---->
+<div class="divFilInfos">
+    <div class="italic10R">2015</div>
+    <h4>Voyage au VIETNAM 2015</h4>
+    Dîner costumé à Hue et quelques "Indochinois" devant l'ancien siège de la Banque de l'Indochine à Hanoï
+    <section class="sxnCarousel" style="width:800px">
+        <div class="divCarousel">
+            {% for img in imgVoyageVietnam %}
+            <a href="../static/img/voyageVietnam/{{ img }}" target="_blank"><img class="imgCarousel-medium" src="../static/img/voyageVietnam/{{ img }}"/></a>
+            {% endfor %}
+        </div>
+    </section><br/>
+</div>
+<!---->
+<div class="divFilInfos"></div>
+<br/><br/>
+{% endblock %}

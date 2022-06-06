@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="..\static\css\styleAris.css" />
+    <title>Accueil</title>
+</head>
+<head>
+    <style type="text/css">
+        #nav1 a:nth-child(1) {
+        /* border-bottom: none; */
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="clsImage"><img id="imgBanqueIndosuez" src="..\static\img\BanqueIndosuez.png" alt="Banque Indosuez"/></div>
+        <div class="clsLogo">ARIS - Association des Retraités de la Banque Indosuez<br/>devenue CA-CIB</div>
+    </header>
+    <main>
+        <section id="sxnNavig">
+            <nav id="nav1">
+                <a href="/index" onClick="openSection();">Accueil</a>
+                <a href="./legalesAdmin.html">Légal & Administratif</a>
+                <a href="./retraites.html">Retraites</a>
+                <a href="./activites.html">Activités</a>
+                <a href="./adherents.html">Adhérents</a>
+                <a href="./histoire.html">Histoire</a>
+            </nav>
+            <nav id="nav2">
+                <a href="./objetAris.html">Qu'est-ce que l'ARIS ?</a>
+                <a href="./offreAris.html">Qu'offre l'ARIS ?</a>
+                <a href="inscriptionAris.html">Comment s'incrire à l'ARIS ?</a>
+            </nav>
+        </section>
+        <section id="sxnContent" onClick="openSection();">
+            Accueil
+        </section>
+    </main>
+    <footer>
+        <div class="divCopyright">Copyright ARIS © 2022 - Tous Droits Réservés - Mentions Légales</div>
+    </footer>
+    <!---->
+    <script src="../static/jvs/script.js"></script>
+</body>
+</html>

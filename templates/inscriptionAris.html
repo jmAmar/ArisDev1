@@ -1,0 +1,35 @@
+{% extends 'generic.html' %}
+
+{% block headContent %}
+    <title>ARIS - Inscription</title>
+    <style type="text/css">
+        #nav1 a:nth-child(1) {
+        /* border-bottom: none; */
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+        #nav2 a:nth-child(3) {
+        border-bottom: none;
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+    </style>
+{% endblock %}
+
+{% block nav2Content %}
+        <a href="/objetAris">Qu'est-ce que l'ARIS ?</a>
+        <a href="/offreAris">Qu'offre l'ARIS ?</a>
+        <a href="/inscriptionAris">Comment s'incrire à l'ARIS ?</a>
+{% endblock %}
+
+{% block sxnContent %}
+    Il vous faut :
+    <ol>
+        <li>Nous communiquer IMPERATIVEMENT vos coordonnées à l'aide du <a href="../static/doc/bulletinAdhesion2022.pdf" target="_blank">BULLETIN ADHESION 2022</a>  à imprimer et à envoyer à :<Br/>
+        <span class="italic">ARIS c/o Jean-Yves PERRIN – 112 Rue de Paris  – 77200 TORCY</span></li>
+        <br/>
+        <li>Nous adresser votre règlement en joignant à l'envoi du bulletin un chèque de 25€ établi à l'ordre de l'ARIS.</li>
+    </ol>
+{% endblock %}

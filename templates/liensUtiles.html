@@ -1,0 +1,38 @@
+{% extends 'generic.html' %}
+
+{% block headContent %}
+    <title>Liens Utiles</title>
+    <style type="text/css">
+        #nav1 a {
+        border-bottom: none;
+        }
+        #nav1 a:nth-child(3) {
+        /* border-bottom: none; */
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+        #nav2 a:nth-child(2) {
+        border-bottom: none;
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+    </style>
+{% endblock %}
+
+{% block nav2Content %}
+    <a href="/articlesRetraites">Articles & Communiqués</a>
+    <a href="/liensUtiles">Liens Utiles</a>
+{% endblock %}
+
+{% block sxnContent %}
+    <span class="bold">HUMANIS:</span><br/>
+        Tél. 0 811 91 00 60<br/>
+        Site Internet: <a href="http://www.humanis.com" target="_blank">http://www.humanis.com</a><br/>
+        Adresse Postale: Malakoff Humanis, Service retraite, 45954 Orléans cedex 9
+    <br/><br/>
+    <span class="bold">CNAV :</span><br/>
+        Site Internet: <a href="https://www.lassuranceretraite.fr" target="_blank">https://www.lassuranceretraite.fr</a>
+<br/><br/>
+{% endblock %}

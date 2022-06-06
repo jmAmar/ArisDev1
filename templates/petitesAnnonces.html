@@ -1,0 +1,32 @@
+{% extends 'generic.html' %}
+
+{% block headContent %}
+    <title>ARIS - Petites Annonces</title>
+    <style type="text/css">
+        #nav1 a {
+        border-bottom: none;
+        }
+        #nav1 a:nth-child(5) {
+        /* border-bottom: none; */
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+        #nav2 a:nth-child(2) {
+        border-bottom: none;
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+    </style>
+{% endblock %}
+
+{% block nav2Content %}
+    <a href="/infosDiverses">Informations Diverses</a>
+    <a href="/petitesAnnonces">Petites Annonces</a>
+    <a href="/necrologie">Ils Nous Ont Quittés</a>
+{% endblock %}
+
+{% block sxnContent %}
+        Petites Annonces
+{% endblock %}

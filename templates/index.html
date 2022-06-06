@@ -1,0 +1,52 @@
+{% extends 'generic.html' %}
+
+{% block headContent %}
+    <title>ARIS - Accueil</title>
+    <style type="text/css">
+        #nav1 a:nth-child(1) {
+        /* border-bottom: none; */
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+    </style>
+{% endblock %}
+
+{% block nav2Content %}
+    <a href="/objetAris">Qu'est-ce que l'ARIS ?</a>
+    <a href="/offreAris">Qu'offre l'ARIS ?</a>
+    <a href="/inscriptionAris">Comment s'incrire à l'ARIS ?</a>
+{% endblock %}
+
+{% block sxnContent %}
+    <span class="bold">Bienvenue sur le Site de L'ARIS</span>
+    <span class="italic">- Association des Retraités  de la Banque Indosuez devenue CA-CIB -</span>
+    <br/><br/>
+    L’ARIS a pour objectif de rassembler les anciens de la Banque Indosuez, de ses origines (Banque de l’Indochine, Banque de Suez et de l’Union des Mines) et des établissements successifs, (Crédit Agricole Indosuez, Calyon et actuellement CA-CIB), qui sont aujourd'hui Retraités.
+    <br/><br/>
+    Ce site vous informera sur la vie et les activités de l’Association et de ses membres.
+    <br/><br/>
+    Nous espérons que vous y découvrirez les informations que vous attendez.<br/>
+    Vos commentaires, vos critiques, et suggestions seront les bienvenus, n’hésitez pas à nous les adresser par mail à arindosuez@wanadoo.fr
+    <br/><br/>
+    Au nom de tous les membres du Conseil d’Administration de l’ARIS, je vous adresse nos plus cordiales salutations.
+    <br/><br/>
+    Jean-Pierre Pampilli<br/>
+    Président
+    <br/><br/>
+    <!---->
+    <div class="divFilInfos">
+        <div class="italic10R">28/04/2022</div>
+        <div id="infoVedette" onClick="moveInfoVedette();">
+            ! Prochain Conseil d'Administration le 13 juin 2022 !
+        </div><br/>
+    </div>
+    <!---->
+    <div class="divFilInfos">
+        <div class="italic10R">04/2022</div>
+            ! Reconstruction du nouveau Site Internet de l'ARIS avec une nouvelle présentation !
+    </div><br/>
+    <!---->
+    <div class="divFilInfos"></div>
+    <br/><br/>
+{% endblock %}

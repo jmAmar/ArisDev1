@@ -1,0 +1,75 @@
+{% extends 'generic.html' %}
+
+{% block headContent %}
+    <title>ARIS - informations Diverses</title>
+    <style type="text/css">
+        #nav1 a {
+        border-bottom: none;
+        }
+        #nav1 a:nth-child(5) {
+        /* border-bottom: none; */
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+        #nav2 a:nth-child(1) {
+        border-bottom: none;
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+         }
+    </style>
+{% endblock %}
+
+{% block nav2Content %}
+    <a href="/infosDiverses">Informations Diverses</a>
+    <a href="/petitesAnnonces">Petites Annonces</a>
+    <a href="/necrologie">Ils Nous Ont Quittés</a>
+{% endblock %}
+
+{% block sxnContent %}<div class="divFilInfos">
+    <div class="italic10R">13/10/2021</div>
+    Nous vous informons de la publication du nouveau livre de <span class="bold">Jean-François Lepetit</span> :
+    <br/><br/>
+    <span class="bold">« L’Etonnant Parcours d'un Homme de Marché »</span>
+    <br/><br/>
+    Afin de vous permettre de découvrir son contenu, vous trouverez ci-après l’<a href="../static/doc/jf_lepetit-livre-avant_propos.pdf" target="_blank">avant-propos</a> et les <a href="../static/doc/jf_lepetit-l_etonnant_parcours_d_un_homme_de_marche-72279-couverture.pdf" target="blank_">pages de couverture</a>.<br/>
+    Le livre est en vente chez ECONOMICA, dans les librairies, à la <a href="https://livre.fnac.com/a16307517/Jean-Francois-Le-Petit-L-etonnant-parcours-d-un-homme-de-marche#omnsearchpos=1">Fnac</a> et chez <a href="https://www.amazon.fr/L%C3%A9tonnant-parcours-dun-homme-march%C3%A9/dp/2717872272/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=1096C99DN8OG0&keywords=L%E2%80%99ETONNANT+PARCOURS+D%E2%80%99UN+HOMME+DE+MARCHE&qid=1650532358&sprefix=l+etonnant+parcours+d+un+homme+de+marche%2Caps%2C52&sr=8-1">Amazon</a>.
+    <br/><br/>
+    <!---->
+    <div class="divFilInfos">
+        <div class="italic10R">10/04/2020</div>
+        Nous vous informons de la publication du second ouvrage de Monsieur <span class="bold">Chau Nguyen Ngoc</span>, adhérent à l’Aris,<br/>
+        que vous pourrez trouver sur les sites de vente de livres classiques comme <a href="https://www.amazon.fr/Viet-histoire-politique-deux-guerres/dp/2383510106/ref=sr_1_1?__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=EHPTQTZ0CE0N&keywords=Viet+Nam+-+L%27histoire+politique+des+deux+guerres+1858-1954+et+1945-1975&qid=1650535406&sprefix=viet+nam+-+l%27histoire+politique+des+deux+guerres+1858-1954+et+1945-1975%2Caps%2C56&sr=8-1">Amazon</a>, <a href="https://livre.fnac.com/a14719153/Chau-Nguyen-Ngoc-Viet-Nam#omnsearchpos=1">Fnac</a>, etc...
+        <br/><br/>
+        Le titre est <span class="bold">"Viet Nam - L'histoire politique des deux guerres 1858-1954 et 1945-1975"</span>, il fait 460 pages.
+        <br/><br/>
+        Note de l'auteur:
+        <br/><br/>
+        <div class="italic">
+            Je remercie tout particulièrement le professeur Nguyễn Thế Anh dont les précieux conseils m’ont aidé à réaliser ce livre.
+            <br/><br/>
+            Je dédie celui-ci à tous ceux qui s’intéressent au Việt Nam, et en particulier à ceux qui ont du sang vietnamien dans les veines, que la connaissance du passé de leur patrie, ou de la patrie de leurs ancêtres, leur permet de mieux comprendre que le présent et le futur d’un pays ne se construisent pas sans douleurs ni larmes."
+        </div>
+        <br/>
+        Début de l'Introduction:
+        <br/><br/>
+        " Pour Robert A Heinlein, <span class="italic">« une génération qui ignore l’histoire n’a pas de passé – ni de futur ».</span>
+        <br/><br/>
+        Le rôle essentiel de l’histoire est de transmettre, aux nouvelles générations, la connaissance des événements passés. Et, parce qu’il y a transmission, il y a devoir de mémoire, et donc un résumé trop bref de l’histoire ne saurait pas suffire.
+        <br/><br/>
+        Dans ce livre, qui retrace les deux grandes guerres vécues par le Việt Nam de 1858 à 1975, les exposés sont donnés avec, autant que possible, des détails référencés, qui permettent de cerner au plus près ce qui est réellement arrivé. L'historien Lê Thành Khôi n’avait-il pas écrit – dans l'avant-propos de son ouvrage <span class="italic">Le Viet Nam, Histoire et Civilisations, Le milieu et l'histoire</span> – que la tâche de l'histoire <span class="italic">« n'est pas de juger, mais d'expliquer et de comprendre » ?</span> "
+        <br/><br/>
+        <img src="../static/img/Viet_Nam-Hisoire_Politique_des_Deux_Guerres-Chau_Nguyen_Ngoc.jpg"/>
+        <br/><br/>
+        Premier Ouvrage de l'Auteur:
+        <br/><br/>
+        <a href="../static/img/Le_temps_des_Ancetres-Chau_Nguyen_Ngoc.jpg" target="_blank">
+            <img src="../static/img/Le_temps_des_Ancetres-Chau_Nguyen_Ngoc.jpg"/>
+        </a>
+        <br/><br/>
+    </div>
+    <!---->
+    <div class="divFilInfos"></div>
+    <br/><br/>
+    {% endblock %}

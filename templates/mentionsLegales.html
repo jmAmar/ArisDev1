@@ -1,0 +1,49 @@
+{% extends 'generic.html' %}
+
+{% block headContent %}
+    <title>Mentions Légales</title>
+    <style type="text/css">
+        #nav1 a {
+        border-bottom: none;
+        }
+        #nav1 a:nth-child(2) {
+        /* border-bottom: none; */
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+        #nav2 a:nth-child(5) {
+        border-bottom: none;
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+    </style>
+{% endblock %}
+
+{% block nav2Content %}
+    <a href="/infosUtiles">Informations Utiles</a>
+    <a href="/statutsAris">Statuts de l'ARIS</a>
+    <a href="/conseilAdmin">Conseil d'Administration</a>
+    <a href="/assembleesGales">Assemblées Générales</a>
+    <a href="/mentionsLegales">Mentions Légales</a>
+{% endblock %}
+
+{% block sxnContent %}
+Propriétaire et Editeur du Site Internet: ARIS - Association des Retraités de la Banque Indosuez devenue CA-CIB -
+<br/><br/>
+Statut: Association régie par la loi du 1er Juillet 1901. Publication au J.O. du 19 Mai 1982.
+<br/><br/>
+Siège Social: CA-CIB, 12 Place des Etats Unis, CS 70052, 92547 Montrouge cedex
+<br/><br/>
+Adresse Postale: ARIS c/o CA-CIB, 12 Place des Etats Unis, CS 70052, 92547 Montrouge cedex
+<br/><br/>
+Adresse Local: Batiment SILVAE, 5ème étage, salle BEIJING, 58 Avenue Verdier, 92547 Montrouge
+<br/><br/>
+Adresse Mail: <a href="mailto:arindosuez@wanadoo.fr">arindosuez@wanadoo.fr</a>
+<br/><br/>
+Directeur de la Publication: Jean-Pierre Pampilli, Président de l'ARIS.
+<br/><br/>
+Hébergeur: Nouvel hébergeur en cours d'évaluation et de négociation
+<br/><br/>
+{% endblock %}

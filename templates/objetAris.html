@@ -1,0 +1,42 @@
+{% extends 'generic.html' %}
+
+{% block pageTitle %}Accueil{% endblock %}
+
+{% block headContent %}
+    <title>Aris - Objet</title>
+    <style type="text/css">
+        #nav1 a:nth-child(1) {
+        /* border-bottom: none; */
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+        #nav2 a:nth-child(1) {
+        border-bottom: none;
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+    </style>
+{% endblock %}
+
+{% block nav2Content %}
+    <a href="/objetAris">Qu'est-ce que l'ARIS ?</a>
+    <a href="/offreAris">Qu'offre l'ARIS ?</a>
+    <a href="/inscriptionAris">Comment s'incrire à l'ARIS ?</a>
+{% endblock %}
+
+{% block sxnContent %}
+    L’ARIS est une association (loi 1901) dont les statuts ont été publiés au JO du 19 mai 1982. Elle a été constituée pour accueillir les retraités de la Banque Indosuez.
+    <br/><br/>
+    La Banque Indosuez, ayant été absorbée par le Crédit Agricole, puis fusionnée avec des départements du Crédit Lyonnais, s’est appelée successivement CAI (Crédit Agricole Indosuez), puis Calyon et enfin CA CIB (Crédit Agricole Corporate Investment Bank).
+    <br/><br/>
+    Parallèlement l’ARIS a, elle aussi, évolué en modifiant ses statuts et elle accueille depuis mars 2009, les retraités de Calyon et CA CIB ainsi que de toute banque qui pourrait résulter de mouvements futurs.
+    <br/><br/>
+    Ainsi l’ARIS compte aujourd’hui environ 700 adhérents retraités .
+    <br/><br/>
+    Afin de voir ce qu’apporte l’Association à ses adhérents , consultez la rubrique :
+    <ul><li><a href="/offreAris">Qu’offre l’ARIS aux retraités ?</a></li></ul>
+    Si vous souhaitez adhérer à l’ARIS, reportez vous à la rubrique :
+    <ul><li><a href="/inscriptionAris">S’inscrire à l’ARIS</a></li></ul>
+{% endblock %}

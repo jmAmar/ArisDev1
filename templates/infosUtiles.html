@@ -1,0 +1,156 @@
+{% extends 'generic.html' %}
+
+{% block headContent %}
+    <title>ARIS - Infos Utiles</title>
+    <style type="text/css">
+        #nav1 a {
+        border-bottom: none;
+        }
+        #nav1 a:nth-child(2) {
+        /* border-bottom: none; */
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+        #nav2 a:nth-child(1) {
+        border-bottom: none;
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+    </style>
+{% endblock %}
+
+{% block nav2Content %}
+    <a href="/infosUtiles">Informations Utiles</a>
+    <a href="/statutsAris">Statuts de l'ARIS</a>
+    <a href="/conseilAdmin">Conseil d'Administration</a>
+    <a href="/assembleesGales">Assemblées Générales</a>
+    <a href="/mentionsLegales">Mentions Légales</a>
+{% endblock %}
+
+{% block sxnContent %}
+    <span class="bold">Local de L'ARIS :</span> Bâtiment SILVAE, 5è étage salle BEIJING, 58 avenue Verdier, 92120 Montrouge
+    <br/><br/>
+    <span class="bold"> Permanences :</span> Le Jeudi de 14h30 à 16h30 (sauf en juillet et août)<br/>
+    Pour nous rencontrer, veuillez rendez-vous par téléphone.
+    <br/><br/>
+    <span class="bold">Adresse Postale :</span> ARIS, c/o CA CIB, 12 Place des Etats Unis, CS 70052, 92547 Montrouge Cedex<br/>
+    <span class="bold">Téléphone :</span> 07 64 21 05 64<br/>
+    <span class="bold">Adresse Mail :</span> <a href="mailto:arindosuez@wanadoo.fr" target="_blank">arindosuez@wanadoo.fr</a><br/>
+    <span class="bold">Site Internet :</span> <a href="http://aris.anciensindosuez.org" target="_blank">http://aris.anciensindosuez.org</a><br/>
+    <span id="spnAnchor">{{ anchor }}</span><br/>
+    <span class="bold" id="spnConseilAdm">Membres du Conseil d’Administration :</span><br/>
+    <table>
+        <thead class="italic">
+            <th>Nom</th>
+            <th>Fonction</th>
+            <th>Téléphone</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jean-Pierre PAMPILLI</td>
+                <td>Président</td>
+                <td>06 08 72 19 00</td>
+            </tr>
+            <tr>
+                <td>Christiane DULONDEL</td>
+                <td>Vice-présidente</td>
+                <td>06 60 88 83 28</td>
+            </tr>
+            <tr>
+                <td>Jean-Yves PERRIN</td>
+                <td>Trésorier</td>
+                <td>06 22 72 74 55</td>
+            </tr>
+            <tr>
+                <td>Geneviève ATTALI</td>
+                <td>Administrateur</td>
+                <td>06 14 26 40 46</td>
+            </tr>
+            <tr>
+                <td>Bertrand de VARAX</td>
+                <td>Administrateur</td>
+                <td>06 58 53 05 87</td>
+            </tr>
+            <tr>
+                <td>Jean-Frédéric DREYFUS</td>
+                <td>Administrateur</td>
+                <td>06 07 88 39 28</td>
+            </tr>
+            <tr>
+                <td>Jean-Michel AMAR</td>
+                <td>Administrateur - Webmaster</td>
+                <td>06 87 48 13 24</td>
+            </tr>
+            <tr>
+                <td>Martine MOULIN</td>
+                <td>Administrateur - Resp. Sorties Culturelles</td>
+                <td>09 52 13 61 57</td>
+            </tr>
+            <tr>
+                <td>Jean-Yves PAUGAM</td>
+                <td>Administrateur</td>
+                <td>06 60 64 75 51</td>
+            </tr>
+            <tr>
+                <td>Evelyne PERRIN</td>
+                <td>Administrateur - Resp. voyages</td>
+                <td>06 12 39 30 47</td>
+            </tr>
+            <tr>
+                <td>Myriam PLANARD</td>
+                <td>Secrétaire</td>
+                <td>06 80 64 05 43</td>
+            </tr>
+        </tbody>
+    </table>
+    <br/><br/>
+    <span class="bold">RH CA-CIB, relation retraités :</span> Muriel BOUCHAUDON, tél. 01 41 89 71 02            
+    <br/><br/>
+    <span class="bold">Assurance Complémentaire Maladie :</span> CREDIT AGRICOLE «Ma Santé»<br/>
+        Tél. 09 72 72 08 82<br/>
+        Site Internet: <a href="http://www.ca-masante.fr" target="_blank">http://www.ca-masante.fr</a><br/>
+        Adresse Postale: TSA 74287, 28039 Chartres Cedex<br/>
+        Réclamation auprès de Mercer: tel. 03 20 89 10 88
+    <br/><br/>
+    <span class="bold">Retraites Complémentaires, régime ARRCO-AGIRC :</span> HUMANIS<br/>
+        Tél. 0 811 91 00 60<br/>
+        Site Internet: <a href="http://www.humanis.com" target="_blank">http://www.humanis.com</a><br/>
+        Adresse Postale: Malakoff Humanis, Service retraite, 45954 Orléans cedex 9
+    <br/><br/>
+    <span class="bold">Rentes (ex Complément Bancaire & RCS) :</span> «LA MONDIALE»<br/>
+        Contact: Myriam EL HADEF<br/>
+        Tél. 01 46 84 35 53<br/>
+        Adresse Mail: <a href="mailto:crbi@humanis.com" target="_blank">crbi@humanis.com</a><br/>
+        Adresse Postale: Malakoff Humanis, Service Rentes, TSA 72000, 92246 Malakoff Cedex
+    <br/><br/>
+    <span class="bold">Retraite Supplémentaire :</span> ALLIANZ (ex AGF)<br/>
+        Tél. 09 78 97 80 14<br/>
+        Adresse Mail: <a href="mailto:retcoll@allianz.fr" target="_blank">retcoll@allianz.fr</a>
+    <br/><br/>
+    <span class="bold">CADIF :</span><br/>     
+        Adresse Postale: Agence Evergreen, 50 avenue Jean Jaurès, 92120 Montrouge<br/>
+        Tél. 01 40 84 64 10<br/>
+        Horaires d’Ouverture: du lundi au jeudi 08h45-11h30 / 12h30-17h15, le vendredi 08h45-11h30 12h30-16h00<br>                                                              
+        Responsable d'Agence: Laurent MALAUBIER, tél. 01 40 84 64 10<br/>           
+    <br/><br/>
+    <span class="bold">Comité Social et Economique (CSE) CA-CIB :</span><br/>
+    Tél. 01.41.89.00.00<br/>
+    Site Internet: <a href="http://www.cse.ca-cib.com" target="_blank">http://www.cse.ca-cib.com</a><br/>                            
+    Ouverture des Guichets:<br/>
+    - Montrouge, immeuble Eole/Evergreen rdc: les Lundis, Jeudis et Vendredis 13h00-15h30<br/>
+    - St Quentin, immeuble Provence rdc: les mardi et jeudi 13h00-15h30<br/>
+    <br/><br/>
+    <span class="bold">Perte ou vol de carte bancaire ou de chéquier :</span> Faire immédiatement Opposition (ouverture 7/7j , 24/24h)<br/>
+    - Cartes Bancaires: tel. 0 892 705 705<br/>
+    - Chéquiers: tel. 0 892 683 208<br/>
+    Porter Plainte en cas de Vol et confirmer la déclaration par Courrier Recommandé
+    <br/><br/>
+    <span class="bold">Urgences :</span> à partir d'un téléphone portable ou fixe<br/>
+    - POMPIERS : tel. 18<br/>
+    - SAMU: tel. 15<br/>
+    - POLICE: tel. 17<br/>
+    - Appel d’Urgence Européen: tel. 112 
+    <br/><br/>
+{% endblock %}

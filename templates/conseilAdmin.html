@@ -1,0 +1,125 @@
+{% extends 'generic.html' %}
+
+{% block headContent %}
+    <title>ARIS - Conseil d'Administration</title>
+    <style type="text/css">
+        #nav1 a {
+        border-bottom: none;
+        }
+        #nav1 a:nth-child(2) {
+        /* border-bottom: none; */
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+        #nav2 a:nth-child(3) {
+        border-bottom: none;
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+    </style>
+{% endblock %}
+
+{% block nav2Content %}
+    <a href="/infosUtiles">Informations Utiles</a>
+    <a href="/statutsAris">Statuts de l'ARIS</a>
+    <a href="/conseilAdmin">Conseil d'Administration</a>
+    <a href="/assembleesGales">Assemblées Générales</a>
+    <a href="/mentionsLegales">Mentions Légales</a>
+{% endblock %}
+
+{% block sxnContent %}
+    L'ARIS est représentée par son <a href="/spnConseilAdm">Conseil d'Administration</a> constitué des adhérents suiants :
+    <table>
+        <thead class="italic">
+            <th>Nom</th>
+            <th>Fonction</th>
+            <th>Echéance du Mandat</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Jean-Pierre PAMPILLI</td>
+                <td>Président</td>
+                <td>Mars 2025</td>
+            </tr>
+            <tr>
+                <td>Christiane DULONDEL</td>
+                <td>Vice-présidente</td>
+                <td>Mars 2024</td>
+            </tr>
+            <tr>
+                <td>Jean-Yves PERRIN</td>
+                <td>Trésorier</td>
+                <td>Mars 2025</td>
+            </tr>
+            <tr>
+                <td>Geneviève ATTALI</td>
+                <td>Administrateur</td>
+                <td>Mars 2024</td>
+            </tr>
+            <tr>
+                <td>Bertrand de VARAX</td>
+                <td>Administrateur</td>
+                <td>Mars 2025</td>
+            </tr>
+            <tr>
+                <td>Jean-Frédéric DREYFUS</td>
+                <td>Administrateur</td>
+                <td>Mars 2024</td>
+            </tr>
+            <tr>
+                <td>Jean-Michel AMAR</td>
+                <td>Administrateur - Webmaster</td>
+                <td>Mars 2024</td>
+            </tr>
+            <tr>
+                <td>Martine MOULIN</td>
+                <td>Administrateur - Resp. Sorties Culturelles</td>
+                <td>Mars 2024</td>
+            </tr>
+            <tr>
+                <td>Jean-Yves PAUGAM</td>
+                <td>Administrateur</td>
+                <td>Mars 2025</td>
+            </tr>
+            <tr>
+                <td>Evelyne PERRIN</td>
+                <td>Administrateur - Resp. voyages</td>
+                <td>Mars 2023</td>
+            </tr>
+            <tr>
+                <td>Myriam PLANARD</td>
+                <td>Secrétaire</td>
+                <td>Mars 2024</td>
+            </tr>
+        </tbody>
+    </table>
+    <br/><br/>
+    Membres d'Honneur :
+    <table>
+        <thead class="italic">
+            <th>Nom</th>
+            <th>Nomination</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ginette LE LANN</td>
+                <td>CA du 05/03/2002</td>
+            </tr>
+            <tr>
+                <td>Geneviève CHARDONNET</td>
+                <td>CA du 05/03/2002</td>
+            </tr>
+            <tr>
+                <td>Lucienne DUMONT</td>
+                <td>CA du 19/03/2009</td>
+            </tr>
+            <tr>
+                <td>Xavier TARNEAUD</td>
+                <td>CA du 22/01/2018</td>
+            </tr> 
+        </tbody>
+    </table>
+    <br/><br/>
+{% endblock %}

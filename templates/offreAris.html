@@ -1,0 +1,68 @@
+{% extends 'generic.html' %}
+
+{% block pageTitle %}Accueil{% endblock %}
+
+{% block headContent %}
+    <title>ARIS - Offre</title>
+    <style type="text/css">
+        #nav1 a:nth-child(1) {
+        /* border-bottom: none; */
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+        #nav2 a:nth-child(2) {
+        border-bottom: none;
+        color: var(--indosuez-color);
+        font-weight: bold;
+        background-color: var(--wheat-color);
+        }
+    </style>
+{% endblock %}
+
+{% block nav2Content %}
+    <a href="/objetAris">Qu'est-ce que l'ARIS ?</a>
+    <a href="/offreAris">Qu'offre l'ARIS ?</a>
+    <a href="/inscriptionAris">Comment s'incrire à l'ARIS ?</a>
+{% endblock %}
+
+{% block sxnContent %}
+    Notre association compte environ 700 adhérents retraités issus de la Banque Indosuez, de CAI (Crédit Agricole Indosuez) de Calyon et de CA-CIB.
+    <br/><br/>
+    <span class="bold">Objectif :</span>
+    <ul>
+        <li><span class="li">Mettre en œuvre toutes activités d'entraide, de solidarité, de loisirs et d'information.</span></li>
+        <li><span class="li">Prendre la défense des intérêts des retraités,</span></li>
+        <li><span class="li">Encourager le souvenir de la Banque aux différentes époques de son histoire.</span></li>
+    </ul>
+    <br/>
+    <span class="bold">Activités / Rencontres :</span>
+    <ul>
+        <li><span class="li">Trois à cinq voyages par an, de moyenne ou longue distance.</span></li>
+        <li><span class="li">L’Assemblée Générale annuelle, suivi d’un déjeuner, est également l’occasion de rencontres.</span></li>
+        <li><span class="li">Des sorties culturelles avec goûter ou déjeuner.</span></li>
+    </ul>
+    <br/>
+    <span class="bold">Solidarité :</span>
+    <ul>
+        <li><span class="li">Une commission sociale a été crée pour aider les retraités en difficulté.</span></li>
+    </ul>
+    <br/>
+    <span class="bold">Communication :</span>
+    <ul>
+        <li><span class="li">Afin de faciliter la communication entre les adhérents, un annuaire comportant, avec leur accord, les noms, adresses, N° de téléphone et Email est publié chaque année.</span></li>
+    </ul>
+    <br/>
+    <span class="bold">Information :</span>
+    <ul>
+        <li><span class="li">Un site internet</span></li>
+        <li><span class="li">La revue, « L’ANCIEN DE LA BANQUE » rédigée par l’UFRB (Union Fédérale des Retraités des Banques) est adressée gratuitement chaque trimestre. Elle apporte de nombreuses informations sur tout ce qui touche la retraite en générale mais aussi sur de nombreux domaines de la vie courante ou des loisirs.</span></li>
+        <li><span class="li">Une newsletter</span></li>
+    </ul>
+    <span class="bold">Vos contacts :</span>
+    <ul>
+        <li><span class="li">Si vous souhaitez nous joindre, consulter la rubrique <a href="/infosUtiles">« Contacts »</a></span></li>
+    </ul>
+    <br/>
+    Par ailleurs L’ARIS a toujours été très impliquée dans la défense des retraites notamment lors de l’intégration des caisses de retraites privées des banques aux régimes AGIRC - ARRCO. Actuellement, son président participe au comité de suivi de la rente la Mondiale et un administrateur siège au conseil d’administration de l’UFRB, ce qui nous permet notamment de suivre au plus près les débats de l’Assemblée Nationale et du Sénat sur le dossier des retraites et de faire passer des idées et revendications.
+{% endblock %}
